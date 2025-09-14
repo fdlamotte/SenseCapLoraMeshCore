@@ -45,7 +45,7 @@ for item in menv.get("BUILD_FLAGS", []):
         menv.Append(BUILD_FLAGS=[f"-I {ui_dir}"])
 
 # add advert name from PIOENV
-menv.Append(BUILD_FLAGS=[f"-D ADVERT_NAME=\'\"{env_name}\"\'"])
+#menv.Append(BUILD_FLAGS=[f"-D ADVERT_NAME=\'\"{env_name}\"\'"])
 
 # copy libs from MC
 libdeps  =f".pio/libdeps/{env_name}/"
